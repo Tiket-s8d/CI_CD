@@ -1,0 +1,29 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Build Debug",
+            "type": "coreclr",
+            "request": "attach"
+        },
+        {
+            "name": "Cortex Debug",
+            "cwd": "${workspaceRoot}",
+            "preLaunchTask": "",
+            "executable": "${workspaceRoot}/STM32F4XX/prj_ght_vent_3/test/bin/MyApp.elf",
+            "preRestartCommands" : [ "load", "enable breakpoint", "monitor reset" ],
+            "request": "launch",
+            "type": "cortex-debug",
+            "servertype": "openocd",
+            "device": "STM32F405RG",
+            "svdFile": "C:/Users/Tik/Downloads/STM32F405.svd", //Нужно прописать стандартное расположение для SVD файлов
+            "runToEntryPoint" : "main",
+            "configFiles": [
+                "interface/stlink.cfg",// Стандартное расположение конфигов (если не контейнер)
+                "target/stm32f4x.cfg"
+            ],
+
+
+        }
+    ]
+}

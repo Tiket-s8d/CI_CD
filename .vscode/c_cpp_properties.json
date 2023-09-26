@@ -1,0 +1,38 @@
+{
+    "configurations": [
+        {
+            "name": "Job",
+            "compilerPath": "arm-none-eabi-gcc",
+            "includePath": [
+                "../../**",
+                "${workspaceRoot}/**"
+            ],
+            "defines": [
+                "DEBUG",
+                "USE_FULL_LL_DRIVER",
+                "STM32F405xx",
+                "FLASH_MBS_CFG",
+                "LM_IQ_MATH",
+                "USE_FULL_ASSERT",
+                "GHT_VENT_3",
+                "MB1_MODE=MB_RTU_SLAVE",
+                "MB1_ADR=1",
+                "MB1_PARITY=0",
+                "MB1_SPEED=1152",
+                "MB1_STOPBIT=1",
+                "MB2",
+                "MB2_ADR=2",
+                "MB2_SPEED=192",
+                "MB2_PARITY=2",
+                "MB2_STOPBIT=1",
+                "MB2_MODE=MB_RTU_SLAVE",
+                "USE_HAL_DRIVER",
+                "MB_UNLOCK_LIB"
+            ],
+            "cStandard": "c11",
+            "cppStandard": "c++17",
+            "intelliSenseMode": "gcc-arm"
+        }
+    ],
+    "version": 4
+}

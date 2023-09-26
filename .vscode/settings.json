@@ -1,0 +1,12 @@
+{
+    "files.associations": {
+        "mainc.h": "c",
+        "main.h": "c",
+        "stm32f4xx_hal.h": "c",
+        "stdint.h": "c",
+        "errno.h": "c",
+        "board_ght_vent_3.h": "c"
+    },
+    "cmake.sourceDirectory": "C:/Users/Timofey/Documents/Projects/CI_CD"
+    
+}

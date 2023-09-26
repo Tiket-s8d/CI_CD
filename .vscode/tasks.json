@@ -1,0 +1,16 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "Build a Debug version Windows",
+            "type": "shell",
+            "command": "${workspaceRoot}/Scripts/cmake_build_windows.bat"
+        },
+        {
+            "label": "Build a Debug version Linux",
+            "type": "shell",
+            "command": "bash ${workspaceRoot}/Scripts/cmake_build_linux.sh"
+        },
+
+    ]
+}
