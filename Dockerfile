@@ -1,7 +1,7 @@
 FROM alpine:3.14
 
-
-RUN apk add --no-cache cmake \
+RUN apk add --no-cache --upgrade bash \
+ cmake \
  gcc-arm-none-eabi \
  git \ 
  make \ 
