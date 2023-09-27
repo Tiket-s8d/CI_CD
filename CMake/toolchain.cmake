@@ -13,10 +13,10 @@ set(CMAKE_CXX_STANDARD 14)
 
 add_compile_options(
     -mcpu=cortex-m4 -std=gnu11 -g3
-    -O0 -ffunction-sections -fcommon -fdata-sections -Wall -fstack-usage --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb
+    -O0 -ffunction-sections -fcommon -fdata-sections -Wall -fstack-usage -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb
     -MMD -MP
 )
 
 add_link_options(
-    -mcpu=cortex-m4 -T "${CMAKE_SOURCE_DIR}/STM32F412RETX_FLASH.ld" --specs=nosys.specs -Wl,--gc-sections --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+    -mcpu=cortex-m4 -T "${CMAKE_SOURCE_DIR}/STM32F412RETX_FLASH.ld" -Wl,--gc-sections -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
 )

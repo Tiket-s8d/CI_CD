@@ -1,0 +1,21 @@
+version: '3'
+services:
+  test1:
+    image: e24bf687ce05
+    command: ["./build.sh"]
+
+  test2:
+    image: e24bf687ce05
+    command: ["./build.sh"]
+
+  test3:
+    image: e24bf687ce05
+    command: ["./build.sh"]
+
+  test4:
+    image: e24bf687ce05
+    command: ["./build.sh"]
+
+  test5:
+    image: e24bf687ce05
+    command: ["./build.sh"]

@@ -1,11 +1,10 @@
-cmake_minimum_required(VERSION 3.26)
+cmake_minimum_required(VERSION 3.20)
 
 set(CMAKE_TOOLCHAIN_FILE ${CMAKE_SOURCE_DIR}/CMake/toolchain.cmake)
 
 project(Test C )
 set(CMAKE_MODULE_PATH "${CMAKE_SOURCE_DIR}/CMake" ${CMAKE_MODULE_PATH})
 
-add_subdirectory(Docs)
 
 file(GLOB ST_HAL_C "${CMAKE_SOURCE_DIR}/Drivers/STM32F4xx_HAL_Driver/Src/*.c")
 file(GLOB CORE_C "${CMAKE_SOURCE_DIR}/Core/Src/*.c")
